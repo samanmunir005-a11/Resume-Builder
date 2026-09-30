@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Studio</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+   <header class="top-header">
+    <div>
+        <h1>Resume Studio</h1>
+        <p>Build a professional resume in real-time.</p>
+    </div>
+
+    <span class="preview-status">Live Interactive Editor</span>
+</header>
+    <div class="resume-container">
+
+    <!-- LEFT SIDE -->
+    <div class="form-section">
+
+    <div class="editor-header">
+        <div>
+            <span class="small-title">CUSTOMIZE CONTENT</span>
+            <h2>Resume Details</h2>
+        </div>
+
+        <span class="step-number">01</span>
+        </div>
+        
+        <div class="template-box">
+
+    <label for="templateSelect">Choose Template</label>
+
+    <select id="templateSelect">
+        <option value="modern">Modern</option>
+        <option value="classic">Classic</option>
+        <option value="minimal">Minimal</option>
+    </select>
+
+</div>
+
+<label for="nameInput" class="required-field">Full Name</label>
+<input type="text" id="nameInput" placeholder="Enter your name">
+
+<label for="jobInput" class="required-field">Job Title</label>
+<input type="text" id="jobInput" placeholder="e.g. Web Developer">
+
+<label for="emailInput" class="required-field">Email</label>
+<input type="email" id="emailInput" placeholder="Enter your email">
+
+<label for="phoneInput" class="required-field">Phone</label>
+<input type="text" id="phoneInput" placeholder="Enter your phone number">
+
+<label for="aboutInput" class="required-field">About Me</label>
+<textarea id="aboutInput" placeholder="Write something about yourself"></textarea>
+<h3>Skills</h3>
+<div class="skill-input">
+ <input
+        type="text"
+        id="skillInput"
+        placeholder="e.g. HTML"
+    >
+
+    <button id="addSkillBtn">Add Skill</button>
+
+</div>
+
+<div id="skillsList"></div>
+
+<h3>Education</h3>
+
+<label for="educationInput" class="required-field">Education</label>
+<textarea
+    id="educationInput"
+    placeholder="e.g. BS Computer Science - University of Punjab"
+></textarea>
+<h3>Experience</h3>
+
+<label for="experienceInput">Work Experience</label>
+<textarea
+    id="experienceInput"
+    placeholder="e.g. Web Development Intern - 6 months"
+></textarea>
+
+    </div>
+<div class="preview-section">
+
+    <div class="preview-header">
+        <div>
+            <span class="small-title">REALTIME PREVIEW</span>
+            <h2>Resume Canvas</h2>
+        </div>
+
+<button id="resetBtn">Reset </button>
+<button id="printBtn">Export PDF</button>
+    
+    </div>
+
+    <div class="resume-card">
+
+        <h1 id="previewName">Your Name</h1>
+
+        <h3 id="previewJob">Your Job Title</h3>
+
+        <p id="previewEmail">your@email.com</p>
+        <p id="previewPhone">Your Phone Number</p>
+
+        <hr>
+
+        <h2>About Me</h2>
+        <p id="previewAbout">
+            Your introduction will appear here.
+        </p>
+
+        <h2>Education</h2>
+        <p id="previewEducation">
+            Your education will appear here.
+        </p>
+
+        <h2>Experience</h2>
+        <p id="previewExperience">
+            Your experience will appear here.
+        </p>
+
+        <h2>Skills</h2>
+        <div id="previewSkills">
+            Your skills will appear here.
+      
+
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
